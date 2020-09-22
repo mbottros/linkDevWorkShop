@@ -1,0 +1,84 @@
+@import '../../../../scss/scss-variables';
+
+.pressRelease {
+  .breadcrumb-custom {
+    .breadcrumb-item+.breadcrumb-item::before {
+      content: ">";
+      color: $color-008795;
+    }
+
+    .breadcrumb {
+      background-color: transparent;
+
+      .breadcrumb-item {
+        a {
+          color: $color-A9AAAE;
+        }
+      }
+
+      .breadcrumb-item.active {
+        color: $color-008795;
+      }
+    }
+  }
+
+  .nav-icon {
+    .nav-link {
+      color: $color-008795;
+    }
+  }
+
+  .card-press {
+    color: $color-008795;
+  }
+
+  .card-latest {
+    color: $color-008795;
+  }
+
+  .icon-search {
+    background-color: $color-008795;
+    color: $color-fff;
+  }
+
+  .card {
+    .card-link {
+      padding: 5px 0;
+      color: $color-fff;
+      border: 1px solid $color-A7A9AC;
+      background-color: $color-A7A9AC;
+    }
+
+    .card-img {
+      height: 300px;
+    }
+
+    .card-p {
+      font-size: 13px;
+    }
+
+    .card-img-overlay {
+      background: #0000005e;
+    }
+
+    &:hover {
+      .card-link {
+        border: 1px solid $color-fff;
+        background-color: transparent;
+      }
+
+      .card-img-overlay {
+        background-color: $color-7CC242;
+      }
+    }
+  }
+
+  .btn-loadMore {
+    background-color: $color-D9D9D9;
+    color: $color-707070;
+  }
+
+  .displayNone {
+    display: none;
+  }
+}

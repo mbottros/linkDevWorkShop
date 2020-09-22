@@ -1,0 +1,73 @@
+@import '../../../scss/scss-variables';
+
+.sticky-top {
+  background-color: $color-fff;
+}
+
+.navbar {
+  .navbar-nav {
+    .nav-link {
+      color: $color-008795 !important;
+    }
+  }
+
+  .icon-search {
+    color: $color-008795;
+  }
+}
+
+.TopNavBar {
+  padding: 10px 0;
+
+  .login-header-link {
+
+    .nav {
+      .nav-item {
+        position: relative;
+
+        .nav-link {
+          color: $color-008795;
+        }
+
+        &:after {
+          position: absolute;
+          content: "";
+          width: 2px;
+          height: 60%;
+          right: 0;
+          background: $color-eee;
+          top: 50%;
+          transform: translate(0, -50%);
+          -webkit-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%);
+        }
+      }
+
+      .nav-item:last-of-type:after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 60%;
+        right: 0;
+        background: $color-fff;
+        top: 50%;
+        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+      }
+    }
+
+    .nav-lang {
+      .nav-link.selected {
+        background-color: $color-008795;
+        padding: 5px 6px !important;
+        border-radius: 10px;
+        color: $color-fff;
+      }
+    }
+  }
+}

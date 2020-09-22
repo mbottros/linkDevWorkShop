@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Calibri';
+  src: local('Calibri'), url(./fonts/CalibriRegular.ttf) format('opentype');
+}
+
+*:not(i) {
+  font-family: Calibri !important;
+}

@@ -1,0 +1,76 @@
+@import '../../../../scss/scss-variables';
+
+.NewsDetails {
+  .breadcrumb-custom {
+    .breadcrumb-item+.breadcrumb-item::before {
+      content: ">";
+      color: $color-008795;
+    }
+
+    .breadcrumb {
+      background-color: transparent;
+
+      .breadcrumb-item {
+        a {
+          color: $color-A9AAAE;
+        }
+      }
+
+      .breadcrumb-item.active {
+        color: $color-008795;
+      }
+    }
+  }
+
+  .nav-icon {
+    .nav-link {
+      color: $color-008795;
+    }
+  }
+
+  .card-press {
+    color: $color-008795;
+  }
+
+  .card-latest {
+    color: $color-008795;
+  }
+
+  .icon-search {
+    background-color: $color-008795;
+    color: $color-fff;
+  }
+
+  .card {
+    .card-title {
+      color: $color-008795;
+    }
+
+    .card-img-overlay {
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      left: 20px;
+      padding: 1.25rem 0;
+      background: #00879596;
+    }
+
+    .btn-arrow {
+      background-color: $color-7CC242;
+      color: $color-fff;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .btn-download {
+    background-color: $color-eee;
+  }
+
+  .span-icon-download {
+    background-color: $color-7CC242;
+    padding: 0 10px;
+  }
+
+}
