@@ -63,7 +63,7 @@ class NewsListing extends Component {
           <div className="container">
           <h3 className="card-title card-press mt-4 text-uppercase">Press Releases</h3>
           <div className="form-row">
-            <div className="form-group col-md-3">
+            <div className="form-group col-lg-3">
               <select className="form-control" id="Select1"
                 onChange={ this.selectoption } >
                 <option value="all" defaultValue>All</option>
@@ -78,7 +78,7 @@ class NewsListing extends Component {
                 }
               </select>
             </div>
-            <div className="form-group col-md-9">
+            <div className="form-group col-lg-9">
               <form onSubmit={ (e) => this.searchSpace(e) }>
               <div className="input-group mb-3">
                 <input type="text" className="form-control" placeholder="Title" id="search_value" aria-label="title" />
@@ -90,7 +90,7 @@ class NewsListing extends Component {
             </div>
 
           </div>
-          <div className="row row-cols-1 row-cols-md-4 mb-3">
+          <div className="row row-cols-1 row-cols-lg-4 mb-3">
             <SortingList data={ data } section="" search={ this.state.search } count={ this.state.count } selcetSearch={ this.state.dataSelection}/>
             </div>
             

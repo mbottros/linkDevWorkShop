@@ -35,7 +35,7 @@ export default class sortingList extends Component {
 
       const articles =  this.props.selcetSearch.map((data, key) => {
         return (
-          <div className="col-sm-6 col-md-3 mb-3" key={ data.id }>
+          <div className="col-sm-6 col-lg-3 mb-3" key={ data.id }>
             <div className="card-deck">
               <div className="card h-auto text-white border-0 rounded-0">
                 <img src={ data.urlToImage } className="card-img" alt="" />
@@ -68,7 +68,7 @@ export default class sortingList extends Component {
       }).map((data, index) => {
           if (index < count) {
             return (
-              <div className="col-sm-6 col-md-3 mb-3" key={ data.id }>
+              <div className="col-sm-6 col-lg-3 mb-3" key={ data.id }>
                 <div className="card-deck">
                   <div className="card h-auto text-white border-0 rounded-0">
                     <img src={ data.urlToImage } className="card-img" alt="" />

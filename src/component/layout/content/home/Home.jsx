@@ -34,7 +34,7 @@ class Home extends Component {
     const articles = data.articles.map((data, index) => {
       if (data.showOnHomepage === true) {
         return (
-          <div className="col-sm-6 col-md-3 mb-3" key={ data.id }>
+          <div className="col-sm-6 col-lg-3 mb-3" key={ data.id }>
             <div className="card-deck">
               <div className="card h-auto text-white border-0 rounded-0">
                 <img src={ data.urlToImage } className="card-img" alt="" />
@@ -61,7 +61,7 @@ class Home extends Component {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img src={ slide_1 } className="d-block w-100" alt="..." />
-                <div className="carousel-caption d-none d-md-block">
+                <div className="carousel-caption d-none d-lg-block">
                   <h5><span className="slideTitle">Al Jalila Foundation</span> is focused on inspiring the next generation of Emirati Healthcare professionals in the UAE.</h5>
                   <div className="mt-5">
                     <Link to="#" className="card-link text-uppercase text-white border p-2">Read More</Link>
@@ -71,7 +71,7 @@ class Home extends Component {
               </div>
               <div className="carousel-item">
                 <img src={ slide_1 } className="d-block w-100" alt="..." />
-                <div className="carousel-caption d-none d-md-block">
+                <div className="carousel-caption d-none d-lg-block">
                   <h5><span className="slideTitle">Al Jalila Foundation</span> is focused on inspiring the next generation of Emirati Healthcare professionals in the UAE.</h5>
                   <div className="mt-5">
                     <Link to="#" className="card-link text-uppercase text-white border p-2">Read More</Link>
@@ -97,8 +97,8 @@ class Home extends Component {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <div className="row">
-                  <div className="col-md-2 d-none d-md-block"></div>
-                  <div className="col-sm-12 col-md-4">
+                  <div className="col-lg-2 d-none d-lg-block"></div>
+                  <div className="col-sm-12 col-lg-4">
                     <div className="card border-0 text-center">
                       <img src={ helped } className="card-img-top" alt="..." />
                       <div className="card-img-overlay">
@@ -113,7 +113,7 @@ class Home extends Component {
                     </div>
 
                   </div>
-                  <div className="col-sm-12 col-md-4">
+                  <div className="col-sm-12 col-lg-4">
                     <div className="card border-0 text-center">
                       <img src={ helped } className="card-img-top" alt="helped" />
                       <div className="card-img-overlay">
@@ -128,13 +128,13 @@ class Home extends Component {
                     </div>
 
                   </div>
-                  <div className="col-md-2 d-none d-md-block"></div>
+                  <div className="col-lg-2 d-none d-lg-block"></div>
                 </div>
               </div>
               <div className="carousel-item">
                 <div className="row">
-                  <div className="col-md-2 d-none d-md-block"></div>
-                  <div className="col-sm-12 col-md-4">
+                  <div className="col-lg-2 d-none d-lg-block"></div>
+                  <div className="col-sm-12 col-lg-4">
                     <div className="card border-0 text-center">
                       <img src={ helped } className="card-img-top" alt="..." />
                       <div className="card-img-overlay">
@@ -149,7 +149,7 @@ class Home extends Component {
                     </div>
 
                   </div>
-                  <div className="col-sm-12 col-md-4">
+                  <div className="col-sm-12 col-lg-4">
                     <div className="card border-0 text-center">
                       <img src={ helped } className="card-img-top" alt="helped" />
                       <div className="card-img-overlay">
@@ -164,7 +164,7 @@ class Home extends Component {
                     </div>
 
                   </div>
-                  <div className="col-md-2 d-none d-md-block"></div>
+                  <div className="col-lg-2 d-none d-lg-block"></div>
                 </div>
               </div>
             </div>
@@ -189,8 +189,8 @@ class Home extends Component {
             <div className="container">
               <h5 className="card-title">Today’s Investments, Tomorrow’s Cures</h5>
               <p className="card-text">Support the different programs we have below</p>
-              <div className="row diamondTop mb-4 mb-md-0">
-                <div className="col-sm-6 col-md-3 mb-4 mb-md-0">
+              <div className="row diamondTop mb-4 mb-lg-0">
+                <div className="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                   <div className="diamond">
                     <div className="diamond-inner">
                       <img src={ boy } alt="boy" />
@@ -199,7 +199,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-md-3 mb-4 mb-md-0">
+                <div className="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                   <div className="diamond">
                     <div className="diamond-inner">
                       <img src={ awen } alt="A’awen" />
@@ -208,7 +208,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-md-3 mb-4 mb-md-0">
+                <div className="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                   <div className="diamond">
                     <div className="diamond-inner">
                       <img src={ scholarships } alt="Scholarships" />
@@ -217,7 +217,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-md-3 mb-4 mb-md-0">
+                <div className="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                   <div className="diamond">
                     <div className="diamond-inner">
                       <img src={ medical } alt="Medical Research" />
@@ -227,9 +227,9 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <div className="row diamond-bottom mb-4 mb-md-0">
-                <div className="col-sm-6 d-none d-md-block col-md-1"></div>
-                <div className="col-sm-6 col-md-3 mb-4 mb-md-0">
+              <div className="row diamond-bottom mb-4 mb-lg-0">
+                <div className="col-sm-6 d-none d-lg-block col-lg-1"></div>
+                <div className="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                   <div className="diamond diamond_1">
                     <div className="diamond-inner">
                       <img src={ zakat } alt="zakat" />
@@ -238,8 +238,8 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 d-none d-md-block col-md-1"></div>
-                <div className="col-sm-6 col-md-3 mb-4 mb-md-0">
+                <div className="col-sm-6 d-none d-lg-block col-lg-1"></div>
+                <div className="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                   <div className="diamond diamond_2">
                     <div className="diamond-inner">
                       <img src={ flower } alt="Fundraising" />
@@ -248,8 +248,8 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 d-none d-md-block col-md-1"></div>
-                <div className="col-sm-6 col-md-3 mb-4 mb-md-0">
+                <div className="col-sm-6 d-none d-lg-block col-lg-1"></div>
+                <div className="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                   <div className="diamond diamond_3">
                     <div className="diamond-inner">
                       <img src={ flowers } alt="Omniyat Dania" />

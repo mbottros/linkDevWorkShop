@@ -7,11 +7,11 @@ class Header extends Component {
     return (
       <header className="sticky-top">
         <section className="TopNavBar container">
-          <NavLink className="navbar-brand topLogo d-none d-md-inline" to="/">
+          <NavLink className="navbar-brand topLogo d-none d-lg-inline" to="/">
             <img className="linkdevlogo" src={logo} alt=""/>
           </NavLink>
           <div className="login-header-link float-lg-right d-lg-inline-block float-sm-none d-block">
-            <ul className="nav nav-login d-inline-block d-md-block">
+            <ul className="nav nav-login d-inline-block d-lg-block">
               <li className="nav-item d-inline-block">
                 <NavLink className="nav-link text-uppercase" to="#">Register</NavLink>
               </li>
@@ -19,7 +19,7 @@ class Header extends Component {
                 <NavLink className="nav-link text-uppercase" to="#">Login</NavLink>
               </li>
             </ul>
-            <ul className="nav nav-lang d-inline-block d-md-block float-md-none float-right">
+            <ul className="nav nav-lang d-inline-block d-lg-block float-lg-none float-right">
               <li className="nav-item d-inline-block">
                 <NavLink className="nav-link text-uppercase selected d-inline-block pr-0" to="">EN</NavLink>
                 <NavLink className="nav-link text-uppercase d-inline-block" to="">AR</NavLink>
@@ -30,7 +30,7 @@ class Header extends Component {
             </ul>
           </div>
         </section>
-        <nav className="navbar navbar-expand-md navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container">
             <NavLink className="navbar-brand d-lg-none" to="/">
               <img className="linkdevlogo" width="100" src={ logo } alt="" />
