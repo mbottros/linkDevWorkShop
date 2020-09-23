@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import "./NewsListing.scss";
 import { NavLink } from "react-router-dom";
 import data from '../../../data/newsapi.json';
+import Loader from "./../../../Loader";
 import SortingList from "../../../SortingList";
 class NewsListing extends Component {
   constructor() {
@@ -11,16 +12,18 @@ class NewsListing extends Component {
       count: 8,
       defaultCount: 8,
       countLength: data.articles.length,
-      dataSelection:[]
+      dataSelection: [],
+      loading: false
     };
   }
   searchSpace = (event) => {
     event.preventDefault();
-    var searchId = document.getElementById('search_value').value;
-    this.setState({ search: searchId })
-  }
-  handleChange = (e) => {
-    this.setState({ search: e.target.value });
+    this.setState({
+      loading: true
+    }, () => {
+        var searchId = document.getElementById('search_value').value;
+        this.setState({ loading: false, search: searchId })  
+    })
   }
   selectoption = (e) => {
     var dataColection = [];
@@ -29,7 +32,11 @@ class NewsListing extends Component {
         return (dataColection.push(data))
       }
     })
-    this.setState({ dataSelection: dataColection });
+    this.setState({
+      loading: true
+    }, () => {
+        this.setState({ loading: false,dataSelection: dataColection });
+    })
     
   }
   handleCount() {
@@ -38,6 +45,7 @@ class NewsListing extends Component {
     this.setState({ count });
   }
   render() {
+    const { loading } = this.state;
     return (
       <section className="pressRelease mb-5">
         <div className="breadcrumb-custom border-bottom">
@@ -91,7 +99,7 @@ class NewsListing extends Component {
 
           </div>
           <div className="row row-cols-1 row-cols-lg-4 mb-3">
-            <SortingList data={ data } section="" search={ this.state.search } count={ this.state.count } selcetSearch={ this.state.dataSelection}/>
+            { loading === true ? <Loader /> : <SortingList data={ data } section="" search={ this.state.search } count={ this.state.count } selcetSearch={ this.state.dataSelection } />}
             </div>
             
           <button type="button" className={ this.state.count <= this.state.countLength ? "btn btn-loadMore rounded-0 btn-lg btn-block" : "displayNone"}id="btnLoad" onClick={ this.handleCount.bind(this) }>Load More</button>
